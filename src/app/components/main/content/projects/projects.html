@@ -1,0 +1,18 @@
+<div class='projects'>
+  <div class='category' ng-repeat='category in displayables'>
+    <div class='name' ng-if='!hasKey()' ng-bind='category.name'></div>
+    <div class='work' ng-repeat='work in category.works'>
+        <a class='name' ng-bind='work.name' ng-href='#/project/{{work.key}}'></a>
+        <div class='description' ng-bind='work.description'></div>
+        <div class='links' ng-if='work.hasLinks()'>
+            <div class='link' ng-repeat='link in work.links' ng-bind='link.text'></div>
+        </div>
+        <div class='features' ng-if='work.hasFeatures()'>
+            <div class='feature' ng-repeat='feature in work.features' ng-bind='feature'></div>
+        </div>
+        <div class='date'>
+          Developed in <span ng-bind='work.date'></span>
+        </div>
+    </div>
+  </div>
+</div>
