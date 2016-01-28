@@ -48,8 +48,6 @@ crashlytics-build.properties
 
 # Created by .ignore support plugin (hsz.mobi)
 
-build/*
-
 bower_components/*
 coverage/*
 !build/index.html
