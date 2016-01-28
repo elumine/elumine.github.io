@@ -10,7 +10,7 @@ var ngAnnotate = require('gulp-ng-annotate');
 var coffee = require('gulp-coffee');
 var sass = require('gulp-sass');
 
-var buildDirName = 'build1',
+var buildDirName = './',
   config = {
   src: {
     libs: [
