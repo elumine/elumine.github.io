@@ -1,6 +1,6 @@
 class Work
   constructor: (data, @key) ->
-    { @name, @description, @text, @video, @date } = data
+    { @name, @poster, @description, @text, @video, @date } = data
 
     @features     = [];   @features.push  feature        for feature in data.features if data.features
     @links        = [];   @links.push     new Link(link) for link    in data.links    if data.links
@@ -20,6 +20,7 @@ class Work
   addFeatures : (features)     -> @addFeature f for f in features;                    @
   addLinks    : (links)        -> @addLink l for l in links;                          @
 
+  hasPoster   :                -> @poster
   hasImages   :                -> @images.length   > 0
   hasFeatures :                -> @features.length > 0
   hasLinks    :                -> @links.length    > 0

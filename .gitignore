@@ -52,7 +52,6 @@ bower_components/*
 coverage/*
 !build/index.html
 npm-debug.log
-/build/
 /bower_components/
 /node_modules/
 /semantic/

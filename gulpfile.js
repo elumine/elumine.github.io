@@ -93,7 +93,6 @@ gulp.task('images', function () {
 
 gulp.task('connect', function () {
     return connect.server({
-        root: buildDirName,
         livereload: true
     });
 });

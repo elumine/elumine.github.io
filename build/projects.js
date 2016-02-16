@@ -9,6 +9,7 @@
         {
           "multiplayer-rpg": {
             name        : 'Multiplayer RPG',
+            poster      : true,
             description : 'Early freelance fun web project.',
             text        : 'long desc text',
             video       : 'youtube.com',
@@ -138,4 +139,4 @@
     ]
   }
 
-})(window)
+})(window);
