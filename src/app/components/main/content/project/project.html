@@ -1,15 +1,18 @@
 <div class='project'>
   <div class='name' ng-bind='project.name'></div>
   <div class='description' ng-bind='project.description'></div>
-  <div class='text' ng-bind='project.text'></div>
   <div class='features' ng-if='project.hasFeatures()'>
     <div class='feature' ng-repeat='feature in project.features' ng-bind='feature'></div>
   </div>
   <div class='links' ng-if='project.hasLinks()'>
-    <div class='link' ng-repeat='link in project.links' ng-bind='link'></div>
+    <div class='link' ng-repeat='link in project.links' ng-bind='link.text'></div>
   </div>
   <div class='images' ng-if='project.hasImages()'>
-    <img class='image' ng-repeat='image in project.images' ng-src='{{image}}' />
+    <div class='image pointer'
+         ng-repeat='image in project.images'
+         ng-click='onImageClick(image)'
+         style="{{ 'background-image: url(' + image + ')' }}"></div>
   </div>
-  <div ng-if='project.hasVideo()' ng-bind='project.video'></div>
+  <div class='text' ng-bind='project.text'></div>
+  <iframe ng-if='project.hasVideo()' ng-src='{{project.interpolatedVideoUrl}}' class='video'></iframe>
 </div>

@@ -12,8 +12,8 @@
             poster      : true,
             description : 'Early freelance fun web project.',
             text        : 'long desc text',
-            video       : 'youtube.com',
-            images      : 3,
+            video       : 'index.html',
+            images      : 5,
             date        : '2013',
             features    : [ "F1", "f2", "f3" ],
             links: [
@@ -133,7 +133,7 @@
               { type : 'youtube' , url : 'youtube.com' },
               { type : 'live'    , url : 'github.io'   }
             ]
-          },
+          }
         }
       }
     ]

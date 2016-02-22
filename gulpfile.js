@@ -86,8 +86,8 @@ gulp.task('templates', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('./src/assets/images/')
-        .pipe(gulp.dest( config.build.path + 'assets/'))
+    return gulp.src('./src/assets/projects/**/*')
+        .pipe(gulp.dest( config.build.path + 'assets/projects'))
         .pipe(connect.reload());
 });
 

@@ -5,15 +5,14 @@ class Work
     @features     = [];   @features.push  feature        for feature in data.features if data.features
     @links        = [];   @links.push     new Link(link) for link    in data.links    if data.links
 
+    if @poster then @poster = 'build/assets/projects/' + @key + '/poster.png'
+
     @setImages data.images
 
   describe    : (@description) -> @
   setText     : (@text)        -> @
-  setVode     : (@video)       -> @
-  setImages   : (images)       ->
-    @images = []
-    @images.push image for image in [ 0..images ]
-    @
+  setVideo    : (@video)       -> @
+  setImages   : (images)       -> @images = []; @images.push 'build/assets/projects/' + @key + '/image' + image + '.png' for image in [ 0..images - 1 ]; @
 
   addFeature  : (f)            -> @features.push f;                                   @
   addLink     : (l)            -> @links.push new Link(l);                            @
