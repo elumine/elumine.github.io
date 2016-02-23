@@ -2,10 +2,10 @@
   <div class='name' ng-bind='project.name'></div>
   <div class='description' ng-bind='project.description'></div>
   <div class='features' ng-if='project.hasFeatures()'>
-    <div class='feature' ng-repeat='feature in project.features' ng-bind='feature'></div>
+      <img class='feature' ng-repeat='feature in project.features' ng-src='{{feature.imageUrl}}' />
   </div>
   <div class='links' ng-if='project.hasLinks()'>
-    <div class='link' ng-repeat='link in project.links' ng-bind='link.text'></div>
+      <img class='link' ng-repeat='link in project.links' ng-src='{{link.imageUrl}}' />
   </div>
   <div class='images' ng-if='project.hasImages()'>
     <div class='image pointer'

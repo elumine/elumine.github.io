@@ -18,3 +18,4 @@ angular.component class Navigation
 
 class NavigationLink
   constructor: (@url, @key) ->
+    @imageUrl = 'build/assets/ui/navigation/' + @key + '.png'

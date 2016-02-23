@@ -30,7 +30,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', function () {
-    runSequence('clean', ['index', 'projects', 'sass', 'coffee', 'images', 'templates', 'libs']);
+    runSequence('clean', ['index', 'projects', 'sass', 'coffee', 'assets', 'templates', 'libs']);
 });
 
 gulp.task('index', function () {
@@ -78,16 +78,15 @@ gulp.task('libs', function () {
 gulp.task('templates', function () {
     return gulp.src('./src/**/*.html')
         .pipe(templateCache({
-          module: 'app',
-
+          module: 'app'
         }))
         .pipe(gulp.dest( config.build.path ))
         .pipe(connect.reload());
 });
 
-gulp.task('images', function () {
-    return gulp.src('./src/assets/projects/**/*')
-        .pipe(gulp.dest( config.build.path + 'assets/projects'))
+gulp.task('assets', function () {
+    return gulp.src('./src/assets/build/**/*')
+        .pipe(gulp.dest( config.build.path + 'assets'))
         .pipe(connect.reload());
 });
 
