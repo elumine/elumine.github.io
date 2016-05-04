@@ -1,12 +1,15 @@
 routeConfig = ($stateProvider, $urlRouterProvider) ->
   $urlRouterProvider
-    .when '/about'    , '/about'
     .when '/projects' , '/projects/'
-    .otherwise '/projects/'
+    .otherwise '/home'
 
   $stateProvider
     .state('main',
       template : '<main></main>'
+    )
+    .state('main.home',
+      url      : '/home'
+      template : '<home></home>'
     )
     .state('main.projects',
       url      : '/projects/:key'

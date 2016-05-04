@@ -2,9 +2,82 @@
 
   window.PROJECTS_STORAGE = {
     categories: [
+        {
+            name: 'Games',
+            key: 'games',
+            projects: {
+                "game-project": {
+                    name: "Game Project",
+                    poster : true,
+                    description : 'game design project desc',
+                    text        : 'long desc text',
+                    images      : 3,
+                    date        : '2016',
+                    features    : [
+                        "f1"
+                    ],
+                    links: [
+                        { type : 'artstation'     , url : 'artstatio1n.com' }
+                    ]
+                },
+                "template-news": {
+                    name: "Template News Project",
+                    poster : true,
+                    description : 'game design news desc',
+                    date        : '2016',
+                    features    : [
+                        "f1"
+                    ],
+                    links: [
+                        { type : 'artstation'     , url : 'artstatio1n.com' }
+                    ],
+                    content: "<template-news></template-news>"
+                }
+            }
+        },
+        {
+            name: 'Level Design',
+            key: 'level-design',
+            projects: {
+                "level-design-project": {
+                    name: "Level Design Project",
+                    poster : true,
+                    description : 'level design project desc',
+                    text        : 'long desc text',
+                    images      : 3,
+                    date        : '2016',
+                    features    : [
+                        "f1"
+                    ],
+                    links: [
+                        { type : 'artstation'     , url : 'artstatio1n.com' }
+                    ]
+                }
+            }
+        },
+        {
+          name: 'Art',
+          key: 'art',
+          projects: {
+              "art-project": {
+                  name: "Art Project",
+                  poster : true,
+                  description : 'desc',
+                  text        : 'long desc text',
+                  images      : 3,
+                  date        : '2016',
+                  features    : [
+                      "f1"
+                  ],
+                  links: [
+                      { type : 'artstation'     , url : 'artstatio1n.com' }
+                  ]
+              }
+          }
+        },
       {
-        name            : 'Web',
-        key             : 'web',
+        name            : 'Programming',
+        key             : 'programming',
         projects:
         {
           "multiplayer-rpg": {

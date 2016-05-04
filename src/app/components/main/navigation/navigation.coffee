@@ -6,11 +6,10 @@ angular.component class Navigation
 
   constructor: ->
     @links = [
-      new NavigationLink 'projects/web'         , 'web'
-      new NavigationLink 'projects/art'         , 'art'
       new NavigationLink 'projects/games'       , 'games'
+      new NavigationLink 'projects/level-design', 'level-design'
+      new NavigationLink 'projects/art'         , 'art'
       new NavigationLink 'projects/programming' , 'programming'
-      new NavigationLink 'about'                , 'about'
     ]
 
 

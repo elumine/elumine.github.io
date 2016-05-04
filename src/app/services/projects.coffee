@@ -3,6 +3,8 @@ angular.service class WorksService
   @module   : 'app'
   @services : [ '$http' ]
 
+
+
   constructor: (options) ->
     @http  = options.services.$http
     @categories = []
@@ -10,21 +12,22 @@ angular.service class WorksService
     for cat in window.PROJECTS_STORAGE.categories
       @categories.push new Category cat
 
+
+
   getProjectByKey: (key) ->
     project = null
     for cK, cV of @categories
       if cV.works[key] then project = cV.works[key]; break
     return project
 
-  getProjectsByCategory: (cats) ->
-    console.log 'getProjectsByCategory', cats
+
+
+  getProjectsByCategory: (searchCategory) ->
     result = []
 
-    if cats
-      for searchCat in cats
-        for selfCat in @categories
-          console.log 'compare', searchCat, selfCat.key
-          result.push selfCat if searchCat is selfCat.key
+    if searchCategory
+      for selfCat in @categories
+        result.push selfCat if searchCategory is selfCat.key
     else
       result = @categories
 

@@ -7,12 +7,15 @@
   <div class='links' ng-if='project.hasLinks()'>
       <img class='link' ng-repeat='link in project.links' ng-src='{{link.imageUrl}}' />
   </div>
-  <div class='images' ng-if='project.hasImages()'>
-    <div class='image pointer'
-         ng-repeat='image in project.images'
-         ng-click='onImageClick(image)'
-         style="{{ 'background-image: url(' + image + ')' }}"></div>
+  <div ng-if="project.hasContent()" bind-compiled="project.content"></div>
+  <div ng-if="!project.hasContent()">
+      <div class='images' ng-if='project.hasImages()'>
+          <div class='image pointer'
+               ng-repeat='image in project.images'
+               ng-click='onImageClick(image)'
+               style="{{ 'background-image: url(' + image + ')' }}"></div>
+      </div>
+      <div class='text' ng-bind='project.text'></div>
+      <iframe ng-if='project.hasVideo()' ng-src='{{project.interpolatedVideoUrl}}' class='video'></iframe>
   </div>
-  <div class='text' ng-bind='project.text'></div>
-  <iframe ng-if='project.hasVideo()' ng-src='{{project.interpolatedVideoUrl}}' class='video'></iframe>
 </div>
