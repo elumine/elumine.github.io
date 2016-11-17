@@ -1,27 +1,23 @@
 routeConfig = ($stateProvider, $urlRouterProvider) ->
   $urlRouterProvider
-    .when '/projects' , '/projects/'
-    .otherwise '/home'
+    .when('/feed/article/:key/' , '/feed/article/:key')
+    .otherwise '/feed'
 
   $stateProvider
     .state('main',
       template : '<main></main>'
     )
-    .state('main.home',
-      url      : '/home'
-      template : '<home></home>'
+    .state('main.feed',
+      url      : '/feed'
+      template : '<feed></feed>'
+      controller: -> console.log 321
     )
-    .state('main.projects',
-      url      : '/projects/:key'
-      params:
+    .state('main.feed.article_viewer',
+      url      : '/article/:key'
+      template : '<article-viewer></article-viewer>'
+      params   :
         key    : null
-      template : '<projects></projects>'
-    )
-    .state('main.project',
-      url      : '/project/:key'
-      params:
-        key    : null
-      template : '<project></project>'
+      controller: -> console.log 123
     )
 
 angular

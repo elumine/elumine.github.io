@@ -1,0 +1,19 @@
+<div class='feed'>
+    <div ui-view></div>
+    <div class='article' ng-repeat='article in articles'>
+        <a ng-click="showArticle(article)">
+            <div class='name' ng-bind='article.name'></div>
+            <img class="poster" ng-if='article.hasPoster()' ng-src='{{article.poster}}' />
+            <div class='description' ng-bind='article.description'></div>
+        </a>
+        <div class='links' ng-if='article.hasLinks()'>
+            <img class='link' ng-repeat='link in article.links' ng-src='{{link.imageUrl}}' />
+        </div>
+        <div class='features' ng-if='article.hasFeatures()'>
+            <img class='feature' ng-repeat='feature in article.features' ng-src='{{feature.imageUrl}}' />
+        </div>
+        <div class='date'>
+            Developed in <span ng-bind='article.date'></span>
+        </div>
+    </div>
+</div>
