@@ -13,7 +13,18 @@ a {
 
 .main {
   width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: Consolas; }
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 35px;
+  width: 100%;
+  background-color: #444;
+  z-index: 1; }
 
 .feed .article {
   position: relative;
@@ -60,15 +71,6 @@ a {
       display: inline-block;
       vertical-align: top;
       background-color: #0f0; }
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 35px;
-  width: 100%;
-  background-color: #444;
-  z-index: 1; }
 
 .header {
   position: relative;

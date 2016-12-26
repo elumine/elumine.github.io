@@ -9,7 +9,6 @@ angular.component class Feed
   constructor: (options) ->
     { @services } = options
     @articles = options.services.articlesService.getAllArticles()
-    console.log(3, @articles)
 
   showArticle: (article) ->
     console.log 'show', article

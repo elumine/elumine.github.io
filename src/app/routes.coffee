@@ -7,17 +7,23 @@ routeConfig = ($stateProvider, $urlRouterProvider) ->
     .state('main',
       template : '<main></main>'
     )
+    .state('main.analytics'
+      url: '/analytics'
+      template : '<analytics></analytics>'
+    )
     .state('main.feed',
       url      : '/feed'
       template : '<feed></feed>'
-      controller: -> console.log 321
     )
     .state('main.feed.article_viewer',
       url      : '/article/:key'
       template : '<article-viewer></article-viewer>'
       params   :
         key    : null
-      controller: -> console.log 123
+    )
+    .state('registerAnalytics'
+      url      : '/registerAnalytics?event'
+      template : '<register-analytics></register-analytics>'
     )
 
 angular
