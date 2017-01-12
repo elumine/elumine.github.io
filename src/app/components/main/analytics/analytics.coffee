@@ -7,6 +7,7 @@ angular.component class AnalyticsComponent
 
 
   constructor: (options) ->
+    ga 'send', 'AnalyticsComponent'
     { @services, @scope } = options
 
     @services.$rootScope.$on 'AnalyticsService.analytics:dataChanged', (e, data) =>

@@ -7,9 +7,11 @@ angular.component class Feed
 
 
   constructor: (options) ->
+    ga 'send', 'Feed'
     { @services } = options
     @articles = options.services.articlesService.getAllArticles()
 
   showArticle: (article) ->
+    ga 'send', 'Feed.showArticle'
     console.log 'show', article
     @services.$state.go('main.feed.article_viewer', { key: article.key })

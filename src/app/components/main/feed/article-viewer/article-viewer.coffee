@@ -7,6 +7,7 @@ angular.component class ArticleViewer
 
 
   constructor: (options) ->
+    ga 'send', 'ArticleViewer'
     { @services } = options
     @article = options.services.articlesService.getArticleByKey options.services.$state.params.key
-    console.log(4, @article)
+    console.log('ArticleViewer', @article)
