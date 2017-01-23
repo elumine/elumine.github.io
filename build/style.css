@@ -12,9 +12,26 @@ a {
   cursor: pointer; }
 
 .main {
+  position: relative;
   width: 1000px;
   margin: 0 auto;
   font-family: Consolas; }
+  .main .categories {
+    position: absolute;
+    left: -75px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #4cae4c; }
+    .main .categories .category {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      bottom: 25px;
+      background-color: #f00;
+      cursor: pointer;
+      display: block; }
 
 
 .feed .article {

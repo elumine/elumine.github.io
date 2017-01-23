@@ -9,7 +9,8 @@ angular.component class Feed
   constructor: (options) ->
     ga 'send', 'Feed'
     { @services } = options
-    @articles = options.services.articlesService.getAllArticles()
+    @category = @services.$state.params.category or 'all'
+    @articles = options.services.articlesService.getArticlesByCategory(@category)
 
   showArticle: (article) ->
     ga 'send', 'Feed.showArticle'

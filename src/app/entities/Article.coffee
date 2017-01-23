@@ -1,6 +1,6 @@
 class Article
   constructor: (data) ->
-    { @key, @name, @poster, @description, @text, @video, @date, @content } = data
+    { @key, @name, @poster, @description, @text, @video, @date, @content, @category } = data
 
     @features     = [];   @features.push  new Feature(feature)   for feature in data.features if data.features
     @links        = [];   @links.push     new Link(link)         for link    in data.links    if data.links

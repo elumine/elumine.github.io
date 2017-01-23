@@ -102,7 +102,7 @@ gulp.task('watch', function () {
     gulp.watch([ './src/**/*.coffee'            ], [ 'coffee'    ]);
     gulp.watch([ './src/**/*.png'               ], [ 'images'    ]);
     gulp.watch([ './src/app/**/*.html'          ], [ 'templates' ]);
-    gulp.watch([ './src/assets/projects.js'     ], [ 'projects' ]);
+    gulp.watch([ './src/assets/projects.js'     ], [ 'projects'  ]);
 });
 
 gulp.task('open_chrome', function () {

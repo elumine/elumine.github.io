@@ -1,6 +1,7 @@
 routeConfig = ($stateProvider, $urlRouterProvider) ->
   $urlRouterProvider
     .when('/feed/article/:key/' , '/feed/article/:key')
+    .when('/feed', '/feed/all')
     .otherwise '/feed'
 
   $stateProvider
@@ -12,7 +13,7 @@ routeConfig = ($stateProvider, $urlRouterProvider) ->
       template : '<analytics></analytics>'
     )
     .state('main.feed',
-      url      : '/feed'
+      url      : '/feed/:category'
       template : '<feed></feed>'
     )
     .state('main.feed.article_viewer',

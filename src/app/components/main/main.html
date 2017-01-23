@@ -1,4 +1,8 @@
 <div class='main'>
+  <div class="categories">
+      <a class="category" href="#/feed/all">all</a>
+      <a ng-repeat="category in categories" href="#/feed/{{category}}" class="category">{{category}}</a>
+  </div>
   <header></header>
   <div ui-view></div>
   <footer></footer>
