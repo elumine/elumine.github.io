@@ -2,7 +2,7 @@ routeConfig = ($stateProvider, $urlRouterProvider) ->
   $urlRouterProvider
     .when('/feed/article/:key/' , '/feed/article/:key')
     .when('/feed', '/feed/all')
-    .otherwise '/feed'
+    .otherwise('/feed')
 
   $stateProvider
     .state('main',

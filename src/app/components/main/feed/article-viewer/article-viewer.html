@@ -1,3 +1,18 @@
 <div class="article-viewer">
-    <div class="key">{{article.key}}</div>
+    <div class="content">
+        <div class="features">
+            <img ng-repeat="feature in article.features" class="feature" ng-src="feature.imageUrl" />
+        </div>
+        <div class="links">
+            <img ng-repeat="link in article.links" class="link" ng-src="link.imageUrl" />
+        </div>
+        <div class="name">{{article.name}}</div>
+        <div class="description">{{article.description}}</div>
+        <div class="images">
+            <img ng-repeat="image in article.images" class="image" ng-src="{{image}}" />
+        </div>
+        <div class="text">{{article.text}}</div>
+        <div class="article-content" bind-compiled="article.content"></div>
+    </div>
+    <a class="bg" href="#/feed/all"></a>
 </div>

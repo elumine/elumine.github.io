@@ -12,11 +12,16 @@
         images      : 3,
         date        : '2016',
         features    : [
-          "f1"
+          "f1", 'f2', 'f3'
         ],
         links: [
+          { type : 'artstation', url : 'artstation.com' },
+          { type : 'artstation', url : 'artstation.com' },
           { type : 'artstation', url : 'artstation.com' }
-        ]
+        ],
+        content: [
+          '<todo-tag></todo-tag>'
+        ].join('')
       }, {
         key         : 'article1',
         name        : "Art Project",
