@@ -10,11 +10,12 @@ angular.component class Main
 
     @scope.categories = []
     for k, v of @services.articlesService.categories
-      @scope.categories.push k
+      @scope.categories.push new Category
+        type: k
 
     @scope.links = [
-      { href: 'www.artstation.com', text: 'artstation' },
-      { href: 'www.github.com', text: 'github' },
-      { href: 'www.youtube.com', text: 'youtube' },
-      { href: 'www.linkedin.com', text: 'linkedin' }
+      new Link({ type: 'artstation', url: 'artstation.com' }),
+      new Link({ type: 'git', url: 'github.com' }),
+      new Link({ type: 'youtube', url: 'youtube.com' }),
+      new Link({ type: 'linkedin', url: 'linkedin.com' })
     ]

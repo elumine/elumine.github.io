@@ -13,7 +13,7 @@ angular.component class Header
     @scope.currentArticleIndex = 0
     @scope.currentArticle = null
 
-    PROGRESS_BAR_VELOCITY_FACTOR = 0.25
+    PROGRESS_BAR_VELOCITY_FACTOR = 0.05
 
     @changeArticle()
     setInterval =>

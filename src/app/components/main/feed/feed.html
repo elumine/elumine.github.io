@@ -7,10 +7,12 @@
             <div class='description' ng-bind='article.description'></div>
         </a>
         <div class='links' ng-if='article.hasLinks()'>
-            <img class='link' ng-repeat='link in article.links' ng-src='{{link.imageUrl}}' />
+            <a ng-repeat='link in article.links' href="{{link.url}}" target="_blank">
+                <img class='link' ng-src='{{link.imageUrl}}' title="{{link.type}}" />
+            </a>
         </div>
         <div class='features' ng-if='article.hasFeatures()'>
-            <img class='feature' ng-repeat='feature in article.features' ng-src='{{feature.imageUrl}}' />
+            <img class='feature' ng-repeat='feature in article.features' ng-src='{{feature.imageUrl}}' title="{{feature.type}}" />
         </div>
         <div class='date'>
             Developed in <span ng-bind='article.date'></span>
