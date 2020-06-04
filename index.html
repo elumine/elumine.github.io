@@ -1,0 +1,301 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+	<script type="text/javascript" src='jquery-2.1.4.min.js'></script>
+	<script type="text/javascript" src='jquery.transform2d.js'></script>
+	<script type="text/javascript" src="jquery.transit.js"></script>
+	<style type="text/css">
+		@font-face {
+			font-family: Quantico;
+			src: url(assets/Quantico-Regular.otf) format("opentype");
+		}
+
+		* {
+			background-size: 100% 100%;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+			-ms-user-select: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		#wrapper {
+			position: absolute;
+			width: 800px;
+			height: 600px;
+			left: 50%;
+			top: 50%;
+			margin-left: -400px;
+			margin-top: -300px;
+			overflow: hidden;
+			perspective: 1000px;
+		}
+
+		.layer {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		#bg-layer {
+			background-image: url(assets/bg.png);
+			z-index: 1;
+		}
+
+		#links-layer {
+			z-index: 2;
+		}
+
+		#components-layer {
+			z-index: 3;
+			perspective: 1000px;
+		}
+
+		.text {
+			position: absolute;
+			color: #fff;
+			opacity: 0.25;
+		}
+
+		.text.left {
+			transform: rotateY(25deg);
+		}
+
+		.text.right {
+			transform: rotateY(-25deg);
+		}
+
+		.text .header {
+			font-family: Quantico;
+			font-size: 18px;
+			margin-bottom: 5px;
+			letter-spacing: 1px;
+		}
+
+		.text .description {
+			font-size: 14px;
+			font-family: Arial;
+			opacity: 0.5;
+		}
+
+		.node {
+			position: absolute;
+			border-radius: 999px;
+			overflow: hidden;
+			cursor: pointer;
+			display: none;
+			box-shadow: 0 0 25px 5px #000;
+			opacity: 0.75;
+		}
+
+		.node.big {
+			width: 80px;
+			height: 80px;
+			margin-left: -40px;
+			margin-top: -40px;
+			border: 5px solid #fc0;
+		}
+
+		.node {
+			width: 64px;
+			height: 64px;
+			margin-left: -32px;
+			margin-top: -32px;
+			border: 4px solid #fc0;
+		}
+
+		.node.small {
+			width: 50px;
+			height: 50px;
+			margin-left: -25px;
+			margin-top: -25px;
+			border: 3px solid #fc0;
+		}
+
+		#my-icon {
+			left: 50%;
+			top: 50%;
+			background-image: url(assets/my-icon.png);
+			opacity: 1;
+			cursor: default;
+		}
+
+		#artstation {
+			left: 59%;
+			top: 68%;
+			background-image: url(assets/artstation-icon.png);
+		}
+
+		#artstation-text {
+			left: 66%;
+			top: 62%;
+		}
+
+		#reddit {
+			left: 38%;
+			top: 62.5%;
+			background-image: url(assets/reddit-icon.png);
+		}
+
+		#reddit-text {
+			left: 21.5%;
+			top: 55%;
+		}
+
+		#youtube {
+			left: 36%;
+			top: 40%;
+			background-image: url(assets/youtube-icon.png);
+		}
+
+		#youtube-text {
+			left: 11%;
+			top: 30%;
+		}
+
+		#linkedin {
+			left: 52%;
+			top: 29%;
+			background-image: url(assets/linkedin-icon.png);
+		}
+
+		#linkedin-text {
+			left: 37.5%;
+			top: 21%;
+		}
+
+		#github {
+			left: 66%;
+			top: 44%;
+			background-image: url(assets/github-icon.png);
+		}
+
+		#github-text {
+			left: 71%;
+			top: 32.5%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='wrapper'>
+		<div class="layer" id="components-layer">
+			<a id='reddit' class='node small'></a>
+			<div class='text left' id='reddit-text'>
+				<div class='header'>REDDIT</div>
+				<div class='description'>Project news.</div>
+			</div>
+			<a id='artstation' href='https://www.artstation.com/artist/elumine'
+				class='node small'></a>
+			<div class='text right' id='artstation-text'>
+				<div class='header'>ARTSTATION</div>
+				<div class='description'>Bad art storage.</div>
+			</div>
+			<a id='youtube' href='https://www.youtube.com/channel/UCh5acCpLQVkqugTC8Noa8IQ' class='node small'></a>
+			<div class='text left' id='youtube-text'>
+				<div class='header'>YOUTUBE</div>
+				<div class='description'>Demos and trailers.</div>
+			</div>
+			<a id='linkedin' href='https://www.linkedin.com/in/elumine' class='node small'></a>
+			<div class='text left' id='linkedin-text'>
+				<div class='header'>LINKEDIN</div>
+			</div>
+			<a id='github' href='https://github.com/elumine' class='node small'></a>
+			<div class='text right' id='github-text'>
+				<div class='header'>GITHUB</div>
+				<div class='description'>Some old stuff.</div>
+			</div>
+			<div id='my-icon' class='node big'></div>
+		</div>
+		<canvas class="layer" id="links-layer"></canvas>
+		<div class="layer" id='bg-layer'></div>
+	</div>
+
+	<script type="text/javascript">
+		const components = [
+			'my-icon',
+			'reddit',
+			'artstation',
+			'youtube',
+			'linkedin',
+			'github'
+		];
+
+		$(document).ready(() => {
+			const nodes = {};
+			for (let i = 0; i < components.length; i++) {
+				nodes[components[i]] = new Node(components[i]);
+			}
+			let fadeCounter = 0;
+			showNode();
+			function showNode() {
+				nodes[components[fadeCounter]].icon.fadeIn(500);
+				fadeCounter++;
+				if (fadeCounter <= components.length - 1) {
+					setTimeout(showNode, 250);
+				}
+			}
+			$(window).bind('mousemove', function (e) {
+				var DX = 25, DY = 25,
+					w = $(window).width(),
+					h = $(window).height(),
+					x = -1 * (w / 2 - e.pageX) / w,
+					y = -1 * (h / 2 - e.pageY) / h;
+				$('#bg-layer').finish().transition({
+					skewX: (x * 10) + 'deg',
+					rotateX: -y * 15 + 'deg',
+					rotateY: x * 15 + 'deg',
+					scale: calcScale(x, y, 0.1, -1)
+				}, 1000);
+				$('#components-layer').finish().animate({
+					transform: 'translate(' + DX * x + ', ' + DY * y + ')',
+					rotateX: y * 25 + 'deg',
+					rotateY: -x * 25 + 'deg',
+					scale: calcScale(x, y, 0.2, 1)
+				}, 1000);
+				function calcScale(x, y, scaleK, direction) {
+					var avg = (Math.abs(x) + Math.abs(y)) / 2;
+					return 1 - direction * scaleK * avg;
+				}
+			});
+		});
+
+		function Node(id) {
+			var icon = $('#' + id), text = $('#' + id + '-text');
+			this.icon = icon;
+			this.text = text;
+			var r = 0;
+			icon.bind('mouseover', function () {
+				var dr = 360;
+				if (Math.random() > 0.5) { dr *= -1; }
+				r += dr;
+				icon.finish().animate({
+					opacity: 1,
+					rotate: r + 'deg',
+					scale: 1.1
+				}, 250);
+				text.finish().animate({
+					opacity: 1
+				}, 500);
+			});
+			icon.bind('mouseout', function () {
+				icon.finish().animate({
+					opacity: id !== 'my-icon' ? 0.75 : 1,
+					scale: 1
+				}, 250);
+				text.finish().animate({
+					opacity: 0.25
+				}, 500);
+			});
+		}
+	</script>
+</body>
+
+</html>
