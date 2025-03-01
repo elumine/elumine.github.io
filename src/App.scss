@@ -9,6 +9,18 @@
         border-radius: 10px;
         background-color: #151515;
         margin-bottom: 15px;
+        position: relative;
+        .SectionLabel {
+            position: absolute;
+            text-transform: uppercase;
+            text-align: right;
+            width: 50%;
+            right: 20px;
+            top: 25px;
+            font-size: 24px;
+            opacity: .25;
+            letter-spacing: 3px;
+        }
         .Icon {
             background-image: url(../assets/mobidev_logo.jpg);
             background-size: 100% 100%;
@@ -36,17 +48,24 @@
                 letter-spacing: 0.55px;
             }
             .Header {
-                font-size: 18px;
+                font-size: 28px;
+                opacity: 0.9;
+                letter-spacing: 1.5px;
             }
             .Position {
                 margin-top: 5px;
-                font-size: 12px;
+                font-size: 13px;
+                letter-spacing: 1.25px;
+                opacity: 0.7;
+                text-transform: uppercase;
             }
             .Years {
+                font-size: 12px;
                 margin-top: 5px;
-                opacity: 0.75;
+                opacity: 0.5;
             }
             .Description {
+                opacity: 0.7;
                 margin-top: 5px;
                 font-size: 12px;
             }
@@ -106,7 +125,6 @@
                 .Profession {
                     padding-top: 5px;
                     font-size: 16px;
-                    padding-bottom: 50px;
                     opacity: 0.85;
                     letter-spacing: 0.75px;
                     transition: 0.125s all linear;
@@ -114,6 +132,10 @@
                         margin-left: -5px;
                         cursor: default;
                     }
+                }
+                .Description {
+                    margin-top: 5px;
+                    padding-bottom: 50px;
                 }
             }
             .List {
@@ -157,25 +179,25 @@
             }
         }
         &.Project {
-            padding: 30px 40px;
+            padding: 20px 40px 30px 40px;
             .Information {
                 margin-left: 80px;
-            }
-            .Header {
-                font-size: 18px;
-            }
-            .Job {
-                margin-top: 5px;
-                opacity: 0.9;
-            }
-            .Years {
-                margin-top: 5px;
-                opacity: 0.75;
-            }
-            .Description {
-                margin-top: 5px;
-                font-size: 12px;
-                opacity: 0.9;
+                .Header {
+                    opacity: 0.8;
+                }
+                .Job {
+                    margin-top: 5px;
+                    opacity: 0.7;
+                }
+                .Years {
+                    margin-top: 5px;
+                    opacity: 0.5;
+                }
+                .Description {
+                    margin-top: 5px;
+                    font-size: 12px;
+                    opacity: 0.7;
+                }
             }
             .Youtube {
                 margin: 20px 8% 20px 9%;
@@ -703,14 +725,16 @@
                     }
                     .Header {
                         font-size: 18px;
+                        opacity: .8;
                     }
                     .Description {
                         margin-top: 5px;
                         font-size: 12px;
+                        opacity: 0.6;
                     }
                     .Years {
                         margin-top: 5px;
-                        opacity: 0.75;
+                        opacity: 0.5;
                     }
                 }
             }

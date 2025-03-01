@@ -15,6 +15,7 @@ function App() {
         <div className="Information">
           <div className="Name">Yevhen Kliuchko</div>
           <div className="Profession">Game Designer</div>
+          <div className="Description">Technical design of systems and gameplay using Unreal Engine.</div>
         </div>
         <div className="List">
           <ContactListItem linkUrl="https://www.youtube.com/@%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9%D0%9A%D0%BB%D1%8E%D1%87%D0%BA%D0%BE-%D1%8A5%D1%83">
@@ -32,6 +33,7 @@ function App() {
         </div>
       </div>
       <div className="Section Project Project2">
+        <div className="SectionLabel">Studio Project</div>
         <div className="Information">
           <div className="Header">La Quimera</div>
           <div className="Job">Reburn Studio</div>
@@ -59,9 +61,10 @@ function App() {
         </div>
       </div>
       <div className="Section Project Project1">
+        <div className="SectionLabel">Idie Project</div>
         <div className="Information">
           <div className="Header">Unreal Engine Action RPG Game</div>
-          <div className="Job">Indie</div>
+          <div className="Job">Personal Demo Project</div>
           <div className="Years">Jan. 2018 - Feb. 2020</div>
           <div className="Description">Unreal Engine indie game demo.</div>
         </div>
@@ -83,6 +86,7 @@ function App() {
         </div>
       </div>
       <div className="Section Work Reburn">
+        <div className="SectionLabel">Game Designer Job</div>
         <a href="https://www.reburn.com/" target="blank">
           <div className="Icon"></div>
           <div className="Information">        
@@ -135,6 +139,7 @@ function App() {
         </div>
       </div>
       <div className="Section Work Mobidev">
+        <div className="SectionLabel">Software Developer Job</div>
         <a href="https://mobidev.biz/" target="blank">
           <div className="Icon"></div>
           <div className="Information">        
@@ -164,6 +169,7 @@ function App() {
         </div>
       </div>
       <div className="Section Education">
+        <div className="SectionLabel">Education</div>
         <div className="List">
           <div className="Item">
             <a href="https://nure.ua/en/" target="blank">
