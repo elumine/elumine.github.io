@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee426cb8.css",
-    "main.js": "/static/js/main.209e6078.js",
+    "main.css": "/static/css/main.9d8a0e36.css",
+    "main.js": "/static/js/main.213c3388.js",
     "static/media/seq4.gif": "/static/media/seq4.74bb6a8c55dc41c6f190.gif",
     "static/media/anim4.gif": "/static/media/anim4.548ae660938a39da0e93.gif",
     "static/media/opt4.png": "/static/media/opt4.606cc13d99d815400761.png",
     "static/media/seq5.gif": "/static/media/seq5.3e97a54eb65ec6dd7f81.gif",
     "static/media/seq3.gif": "/static/media/seq3.3a80f1380c6cf71cb5d9.gif",
+    "static/media/screen6.png": "/static/media/screen6.e232c108abc1df50e3dc.png",
+    "static/media/screen4.png": "/static/media/screen4.db3cb3227a39e15d48b2.png",
+    "static/media/screen5.png": "/static/media/screen5.cf896b37c698089c13dd.png",
     "static/media/debug1.png": "/static/media/debug1.7bece16c0b812caf0a81.png",
+    "static/media/screen3.png": "/static/media/screen3.41291ac0ee87481e27ce.png",
+    "static/media/Screen11.png": "/static/media/Screen11.2c8f82d449ef9771098d.png",
+    "static/media/Screen10.png": "/static/media/Screen10.ae73ed590ddd09cc447a.png",
+    "static/media/screen1.png": "/static/media/screen1.406989c0003c7bf2c379.png",
+    "static/media/screen7.png": "/static/media/screen7.3fb6e4edba8c53cb29ee.png",
+    "static/media/Screen9.png": "/static/media/Screen9.317af98f25235621ac8d.png",
     "static/media/job_mobidev_gallery_4.png": "/static/media/job_mobidev_gallery_4.1631cdc0b85f8ea33d2d.png",
+    "static/media/screen2.png": "/static/media/screen2.b1fc12feb40031c72a93.png",
     "static/media/job_mobidev_gallery_1.png": "/static/media/job_mobidev_gallery_1.7144fc982c430ea2fd2c.png",
+    "static/media/screen8.png": "/static/media/screen8.03434b35f542702d985f.png",
     "static/media/vfx1.jpg": "/static/media/vfx1.9addd2b79fa66dcce39a.jpg",
     "static/media/seq0.png": "/static/media/seq0.9a475eed824e8f98a122.png",
     "static/media/job_mobidev_gallery_2.png": "/static/media/job_mobidev_gallery_2.c024b37c2ded29c5e70e.png",
@@ -68,11 +79,11 @@
     "static/media/nodejs_logo.jpeg": "/static/media/nodejs_logo.b88a6edb6e38a6b76444.jpeg",
     "static/media/artstation-icon.png": "/static/media/artstation-icon.2262b95f407afee890da.png",
     "index.html": "/index.html",
-    "main.ee426cb8.css.map": "/static/css/main.ee426cb8.css.map",
-    "main.209e6078.js.map": "/static/js/main.209e6078.js.map"
+    "main.9d8a0e36.css.map": "/static/css/main.9d8a0e36.css.map",
+    "main.213c3388.js.map": "/static/js/main.213c3388.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee426cb8.css",
-    "static/js/main.209e6078.js"
+    "static/css/main.9d8a0e36.css",
+    "static/js/main.213c3388.js"
   ]
 }
