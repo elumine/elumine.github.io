@@ -1,0 +1,37 @@
+.Gallery1 {
+    position: relative;
+    .Hider {
+        overflow: hidden;
+        .Scroller {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 50%);
+            grid-template-rows: 50% 50%;
+            transition: all .5s ease-in-out;
+            .GalleryImage {
+                height: 200px;
+            }
+        }
+    }
+    .Points {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        .Point {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: #333;
+            cursor: pointer;
+            margin-left: 20px;
+            transition: all .25s ease-in-out;
+            &.Active {
+                background: #777;
+                cursor: default;
+            }
+        }
+    }
+}

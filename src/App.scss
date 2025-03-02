@@ -243,43 +243,55 @@
                     .GalleryImage {
                         &.id-1 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets/project2/1.jpg);
                             }
                         }
                         &.id-2 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets/project2/2.jpg);
                             }
                         }
                         &.id-3 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets/project2/3.jpg);
                             }
                         }
                         &.id-4 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets/project2/4.jpg);
                             }
                         }
                         &.id-5 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets/project2/5.jpg);
                             }
                         }
                         &.id-6 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets/project2/6.jpg);
                             }
                         }
@@ -309,31 +321,138 @@
                 }
                 .Gallery {
                     .GalleryImage {
+                        &.id-Screen1 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen1.png);
+                            }
+                        }
+                        &.id-Screen2 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen2.png); 
+                            }
+                        }
+                        &.id-Screen3 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen3.png); 
+                            }
+                        }
+                        &.id-Screen4 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen4.png); 
+                            }
+                        }
+                        &.id-Screen5 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen5.png); 
+                            }
+                        }
+                        &.id-Screen6 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen6.png); 
+                            }
+                        }
+                        &.id-Screen7 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen7.png); 
+                            }
+                        }
+                        &.id-Screen8 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/screen8.png); 
+                            }
+                        }
+                        &.id-Screen9 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/Screen9.png); 
+                            }
+                        }
+                        &.id-Screen10 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/Screen10.png); 
+                            }
+                        }
+                        &.id-Screen11 {
+                            .Image {
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
+                                background-image: url(../assets/project1/Screen11.png); 
+                            }
+                        }
                         &.id-1 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets//project1/1.jpg);
                             }
                         }
                         &.id-2 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets//project1/2.jpg);
                             }
                         }
                         &.id-3 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets//project1/3.jpg);
                             }
                         }
                         &.id-4 {
                             .Image {
-                                width: 375px;
-                                height: 200px;
+                                &.Max {
+                                    width: 375px;
+                                    height: 225px;
+                                }
                                 background-image: url(../assets//project1/4.jpg);
                             }
                         }
@@ -370,7 +489,7 @@
                         &.id-bp2 {
                             .Image { 
                                 width: 340px;
-                                height: 200px;
+                                height: 225px;
                                 background-image: url(../assets/reburn/bp2.png); 
                             }
                         }
@@ -677,28 +796,28 @@
                         &.id-1 {
                             .Image {
                                 width: 400px;
-                                height: 200px;
+                                height: 225px;
                                 background-image: url(../assets/job_mobidev_gallery_1.png); 
                             }
                         }
                         &.id-2 {
                             .Image {
                                 width: 400px;
-                                height: 200px;
+                                height: 225px;
                                 background-image: url(../assets/job_mobidev_gallery_2.png); 
                             }
                         }
                         &.id-3 {
                             .Image {
                                 width: 400px;
-                                height: 200px;
+                                height: 225px;
                                 background-image: url(../assets/job_mobidev_gallery_3.png); 
                             }
                         }
                         &.id-4 {
                             .Image {
                                 width: 400px;
-                                height: 200px;
+                                height: 225px;
                                 background-image: url(../assets/job_mobidev_gallery_4.png); 
                             }
                         }

@@ -3,6 +3,7 @@ import "./App.scss";
 import ContactListItem from "./ContactListItem.tsx";
 import GalleryImage from "./GalleryImage.tsx";
 import SkillItem from "./SkillItem.tsx";
+import Gallery from "./Gallery.tsx";
 
 function App() {
   return (
@@ -51,14 +52,14 @@ function App() {
             <div className="SteamImage"></div>
           </a>
         </div>
-        <div className="Gallery">
+        <Gallery columnsCount={3} columnWidth={50} rowsCount={2} rowHeight={50} pointsCount={2}>
           <GalleryImage imageId='1' displayText=''></GalleryImage>
           <GalleryImage imageId='2' displayText=''></GalleryImage>
           <GalleryImage imageId='3' displayText=''></GalleryImage>
           <GalleryImage imageId='4' displayText=''></GalleryImage>
           <GalleryImage imageId='5' displayText=''></GalleryImage>
           <GalleryImage imageId='6' displayText=''></GalleryImage>
-        </div>
+        </Gallery>
       </div>
       <div className="Section Project Project1">
         <div className="SectionLabel">Idie Project</div>
@@ -78,12 +79,23 @@ function App() {
             <div className="SteamImage"></div>
           </a>
         </div>
-        <div className="Gallery">
+        <Gallery columnsCount={6} columnWidth={50} rowsCount={3} rowHeight={33} pointsCount={3}>
+          <GalleryImage imageId='Screen1' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen2' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen3' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen4' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen5' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen6' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen7' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen8' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen9' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen10' displayText=''></GalleryImage>
+          <GalleryImage imageId='Screen11' displayText=''></GalleryImage>
           <GalleryImage imageId='1' displayText=''></GalleryImage>
           <GalleryImage imageId='2' displayText=''></GalleryImage>
           <GalleryImage imageId='3' displayText=''></GalleryImage>
           <GalleryImage imageId='4' displayText=''></GalleryImage>
-        </div>
+        </Gallery>
       </div>
       <div className="Section Work Reburn">
         <div className="SectionLabel">Game Designer Job</div>
