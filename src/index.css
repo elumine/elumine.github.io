@@ -6,6 +6,15 @@ body {
     letter-spacing: 0.5px;
 }
 
-a:visited {
-    color: inherit;
+.text-gray-1 {
+    color: #eee !important;
+}
+.text-gray-2 {
+    color: #ccc !important;
+}
+.text-gray-3 {
+    color: #aaa !important;
+}
+.text-gray-4 {
+    color: #888 !important;
 }

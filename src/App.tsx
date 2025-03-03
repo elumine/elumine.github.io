@@ -14,9 +14,9 @@ function App() {
         </div>
         <div className="Photo"></div>
         <div className="Information">
-          <div className="Name">Yevhen Kliuchko</div>
-          <div className="Profession">Game Designer</div>
-          <div className="Description">Technical design of systems and gameplay using Unreal Engine.</div>
+          <div className="Name text-gray-1">Yevhen Kliuchko</div>
+          <div className="Profession text-gray-2">Game Designer</div>
+          <div className="Description text-gray-3">Technical design of systems and gameplay using Unreal Engine.</div>
         </div>
         <div className="List">
           <ContactListItem linkUrl="https://www.youtube.com/@%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9%D0%9A%D0%BB%D1%8E%D1%87%D0%BA%D0%BE-%D1%8A5%D1%83">
@@ -36,9 +36,9 @@ function App() {
       <div className="Section Project Project2">
         <div className="SectionLabel">Studio Project</div>
         <div className="Information">
-          <div className="Header">La Quimera</div>
-          <div className="Job">Reburn Studio</div>
-          <div className="Description">
+          <div className="Header text-gray-1">La Quimera</div>
+          <div className="Job text-gray-2">Reburn Studio</div>
+          <div className="Description text-gray-2">
             La Quimera is a story-driven FPS set in dystopian future Latin America. In a fractured world where microstates rely on mercenary forces, you are an operative caught in a web of lies and deception. Play alone or with up to two friends geared with futuristic weapons, exoskeletons and combat abilities.
           </div>
         </div>
@@ -64,10 +64,10 @@ function App() {
       <div className="Section Project Project1">
         <div className="SectionLabel">Idie Project</div>
         <div className="Information">
-          <div className="Header">Unreal Engine Action RPG Game</div>
-          <div className="Job">Personal Demo Project</div>
-          <div className="Years">Jan. 2018 - Feb. 2020</div>
-          <div className="Description">Unreal Engine indie game demo.</div>
+          <div className="Header text-gray-1">Unreal Engine Action RPG Game</div>
+          <div className="Job text-gray-2">Personal Demo Project</div>
+          <div className="Years text-gray-4">Jan. 2018 - Feb. 2020</div>
+          <div className="Description text-gray-3">Unreal Engine indie game demo.</div>
         </div>
         <div className="Youtube">
           <a href="https://www.youtube.com/watch?v=yIsbTKms9Is" target="blank">
@@ -102,10 +102,10 @@ function App() {
         <a href="https://www.reburn.com/" target="blank">
           <div className="Icon"></div>
           <div className="Information">        
-            <div className="Header">Reburn</div>
-            <div className="Position">Technial Game Designer</div>
-            <div className="Years">Feb. 2021 - Aug. 2024</div>
-            <div className="Description">
+            <div className="Header text-gray-1">Reburn</div>
+            <div className="Position text-gray-2">Technial Game Designer</div>
+            <div className="Years text-gray-4">Feb. 2021 - Aug. 2024</div>
+            <div className="Description text-gray-3">
               Design and implementation of gameplay systems using Unreal Engine. 
             </div>
           </div>
@@ -155,10 +155,10 @@ function App() {
         <a href="https://mobidev.biz/" target="blank">
           <div className="Icon"></div>
           <div className="Information">        
-            <div className="Header">MobiDev</div>
-            <div className="Position">JavaScript Developer</div>
-            <div className="Years">Apr. 2015 - Jan. 2021</div>
-            <div className="Description">Development of enterprise applications (medical, search engines, custom analytics tools, etc.) for web, mobile and desktop platforms.</div>
+            <div className="Header text-gray-1">MobiDev</div>
+            <div className="Position text-gray-2">JavaScript Developer</div>
+            <div className="Years text-gray-4">Apr. 2015 - Jan. 2021</div>
+            <div className="Description text-gray-3">Development of enterprise applications (medical, search engines, custom analytics tools, etc.) for web, mobile and desktop platforms.</div>
           </div>
         </a>
         <div className="Skills">
@@ -187,9 +187,9 @@ function App() {
             <a href="https://nure.ua/en/" target="blank">
               <div className="Icon"></div>
               <div className="Information">
-                <div className="Header">Kharkiv National University of Radioelectronics, Ukraine</div>
-                <div className="Description">Publishing and printing computer technologies and systems, Publishing Production Engineer</div>
-                <div className="Years">2010-2015</div>
+                <div className="Header text-gray-1">Kharkiv National University of Radioelectronics, Ukraine</div>
+                <div className="Description text-gray-2">Publishing and printing computer technologies and systems, Publishing Production Engineer</div>
+                <div className="Years text-gray-4">2010-2015</div>
               </div>
             </a>
           </div>
