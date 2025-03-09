@@ -4,7 +4,7 @@ import "./App.scss";
 import ContactListItem from "./ContactListItem.tsx";
 
 export default function App() {
-  const [programmer, setPrg] = useState(window.location.pathname == '/programmer');
+  const [programmer, setPrg] = useState(window.location.hash == '#/programmer');
 
   return (
     <div className="App">

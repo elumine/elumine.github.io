@@ -7,7 +7,7 @@ export default function Gallery({children, pointsCount, columnsCount, columnWidt
     // const pointsCount = Math.floor( children.length / 2 ) - 1;
     const pointsList = new Array<React.JSX.Element>();
     for (let index = 0; index < pointsCount; index++) {
-        pointsList.push(<div onClick={() => { setPoint(index); }} className={`Point ${ index == point ? 'Active' : 'Inactive' }`}></div>);
+        pointsList.push(<div key={index} onClick={() => { setPoint(index); }} className={`Point ${ index == point ? 'Active' : 'Inactive' }`}></div>);
     }
     let pointPercentage = -point * 100;
     // let columnsCount = pointsCount + 1;
