@@ -25,7 +25,8 @@ export default function App() {
           </div>
           <div className="Description text-gray-3">
             {
-              programmer ? 'Web applications development.'
+              programmer ? 
+                'Web applications development.'
                 : 'Technical design of systems and gameplay using Unreal Engine.'
             }
           </div>

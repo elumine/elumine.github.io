@@ -14,7 +14,7 @@ export default function ProgrammerView() {
         <div className="Information">
           <div className="Header text-gray-1">Angular</div>
           <div className="Description text-gray-2">
-            Development on single page applications using microservices architecture.
+            Development of single page applications using microservices architecture.
           </div>
         </div>
         <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
@@ -88,7 +88,7 @@ export default function ProgrammerView() {
         <div className="Information">
           <div className="Header text-gray-1">React</div>
           <div className="Description text-gray-2">
-            Development on single page applications.
+            Development of single page applications.
           </div>
         </div>
         <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
