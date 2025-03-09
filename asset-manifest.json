@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9ada4f1.css",
-    "main.js": "/static/js/main.c1c97a9e.js",
+    "main.css": "/static/css/main.1006c579.css",
+    "main.js": "/static/js/main.1677b8f3.js",
     "static/media/seq4.gif": "/static/media/seq4.74bb6a8c55dc41c6f190.gif",
     "static/media/anim4.gif": "/static/media/anim4.548ae660938a39da0e93.gif",
+    "static/media/game2.png": "/static/media/game2.34cc7eba5aaf8aeb65a8.png",
     "static/media/opt4.png": "/static/media/opt4.606cc13d99d815400761.png",
     "static/media/seq5.gif": "/static/media/seq5.3e97a54eb65ec6dd7f81.gif",
     "static/media/seq3.gif": "/static/media/seq3.3a80f1380c6cf71cb5d9.gif",
@@ -37,9 +38,11 @@
     "static/media/youtube.png": "/static/media/youtube.216cc80763e6b1e01b41.png",
     "static/media/postgresql_logo.png": "/static/media/postgresql_logo.abd1ab7d5b4ce3f5aa62.png",
     "static/media/opt2.png": "/static/media/opt2.d79892012bb8676b3d83.png",
+    "static/media/angular2.png": "/static/media/angular2.0f30be6c46630761cf8c.png",
     "static/media/opt1.png": "/static/media/opt1.b54ce0be07b5d9ec2dca.png",
     "static/media/Steam.png": "/static/media/Steam.f68b37ddfbd22fdec36f.png",
     "static/media/mat2.jpeg": "/static/media/mat2.54ad7f7480a605ec4939.jpeg",
+    "static/media/game1.jpg": "/static/media/game1.55f9c41c75dc41f943f4.jpg",
     "static/media/pp0.png": "/static/media/pp0.b04ed4f15b783093cc1a.png",
     "static/media/youtube-icon.png": "/static/media/youtube-icon.1f16e2bd27b5f295e915.png",
     "static/media/pp1.png": "/static/media/pp1.72f363c733fbe08175ed.png",
@@ -57,7 +60,9 @@
     "static/media/anim3.png": "/static/media/anim3.0aa7abfe25c607cc4b1d.png",
     "static/media/steam.png": "/static/media/steam.3bf538856050cbbdf8ff.png",
     "static/media/mat1.jpg": "/static/media/mat1.b30b193736adc16daa32.jpg",
+    "static/media/react2.png": "/static/media/react2.e01f9fa66199762a45a5.png",
     "static/media/vfx3.png": "/static/media/vfx3.11c5996cc2261a2bcb7e.png",
+    "static/media/react1.png": "/static/media/react1.de81733525baae29d935.png",
     "static/media/anim0.png": "/static/media/anim0.178f9b0b4b8e6c5c6e9a.png",
     "static/media/levelbp2.png": "/static/media/levelbp2.15492570f966e4cb663b.png",
     "static/media/css_logo.png": "/static/media/css_logo.c670aafd06379ee0f701.png",
@@ -78,12 +83,13 @@
     "static/media/bp3.png": "/static/media/bp3.c61dd873dd0390b43333.png",
     "static/media/nodejs_logo.jpeg": "/static/media/nodejs_logo.b88a6edb6e38a6b76444.jpeg",
     "static/media/artstation-icon.png": "/static/media/artstation-icon.2262b95f407afee890da.png",
+    "static/media/angular1.png": "/static/media/angular1.abc67e4ef60220ca4b73.png",
     "index.html": "/index.html",
-    "main.f9ada4f1.css.map": "/static/css/main.f9ada4f1.css.map",
-    "main.c1c97a9e.js.map": "/static/js/main.c1c97a9e.js.map"
+    "main.1006c579.css.map": "/static/css/main.1006c579.css.map",
+    "main.1677b8f3.js.map": "/static/js/main.1677b8f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9ada4f1.css",
-    "static/js/main.c1c97a9e.js"
+    "static/css/main.1006c579.css",
+    "static/js/main.1677b8f3.js"
   ]
 }

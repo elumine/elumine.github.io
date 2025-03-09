@@ -1,0 +1,32 @@
+.ContactListItem {
+    .ContactIcon {
+        background-size: 100% 100%;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        opacity: 0.5;
+        transition: all 0.125s ease-in-out;
+        display: inline-block;
+        vertical-align: top;
+        &:hover {
+            opacity: 1;
+            scale: 1.25;
+            transform: rotate(180deg);
+        }
+        &.Youtube {
+            width: 30px;
+            margin-top: -1px;
+            height: 30px;
+            background-image: url(../assets/youtube-icon.png);
+        }
+        &.Linkedin {
+            background-image: url(../assets/linkedin-icon.png);
+        }
+        &.Github {
+            background-image: url(../assets/github-icon.png);
+        }
+        &.Artstation {
+            background-image: url(../assets/artstation-icon.png);
+        }
+    }
+}

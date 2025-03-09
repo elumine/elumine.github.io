@@ -1,0 +1,81 @@
+.App {
+    .Section {
+        &.Skills {
+            .GalleryHeader {
+                margin-top: 10px;
+                font-size: 1.5em;
+            }
+            .Info {
+                .TechList {
+                    padding-left: 22px;
+                    list-style-type: square;
+                }
+                .ContactListItem {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 20px;
+                }
+                .DescriptionText {
+                    margin-top: 5px;
+                    display: inline-block;
+                    vertical-align: top;
+                    color: #aaa;
+                }
+            }
+            &.Angular {
+                .Icon {
+                    background-image: url(../../assets/angular_logo.jpg);
+                }
+            }
+            &.React {
+                .Icon {
+                    background-image: url(../../assets/react_logo.png);
+                }
+            }
+            &.Nest {
+                .Icon {
+                    background-image: url(../../assets/nest_logo.jpg);
+                }
+            }
+            &.Javascript {
+                .Icon {
+                    width: 60px;
+                    background-image: url(../../assets/javascript_logo.png);
+                }
+            }
+            &.NodeJS {
+                .Icon {
+                    width: 130px;
+                    background-image: url(../../assets/nodejs_logo.jpeg);
+                }
+            }
+            .GalleryImage {
+                background-size: 100% 100%;
+                &.Project1 {
+                    background-image: url(../../assets/js/game1.jpg);
+                }
+                &.Project2 {
+                    background-image: url(../../assets/js/game2.png);
+                }
+                &.ProjectAngular1 {
+                    background-image: url(../../assets/js/angular1.png);
+                }
+                &.ProjectAngular2 {
+                    background-image: url(../../assets/js/angular2.png);
+                }
+                &.ProjectReact1 {
+                    background-image: url(../../assets/js/react1.png);
+                }
+                &.ProjectReact2 {
+                    background-image: url(../../assets/js/react2.png);
+                }
+                &.ProjectReact3 {
+                    // background-image: url(../../assets/js/js5.png);
+                }
+                &.ProjectNest1 {
+                    // background-image: url(../../assets/js/js5.png);
+                }
+            }
+        }
+    }
+}

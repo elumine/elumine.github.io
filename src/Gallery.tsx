@@ -24,9 +24,11 @@ export default function Gallery({children, pointsCount, columnsCount, columnWidt
                     {children}
                 </div>
             </div>
-            <div className="Points">
-                {pointsList}
-            </div>
+            { !!pointsCount &&
+                <div className="Points">
+                    {pointsList}
+                </div>
+            }
         </div>
     );
 }

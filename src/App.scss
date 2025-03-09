@@ -110,7 +110,7 @@
                 transition: 0.125s all linear;
                 .Name {
                     font-weight: 600;
-                    font-size: 24px;
+                    font-size: 28px;
                     letter-spacing: 1.5px;
                     transition: 0.25s all linear;
                     &:hover {
@@ -120,16 +120,30 @@
                 }
                 .Profession {
                     padding-top: 5px;
-                    font-size: 16px;
+                    font-size: 22px;
                     letter-spacing: 0.75px;
                     transition: 0.125s all linear;
-                    &:hover {
-                        margin-left: -5px;
-                        cursor: default;
+                    .Item {
+                        margin-right: 20px;
+                        padding: 10px;
+                        &.unselected {
+                            a {
+                                color: #aaa !important;
+                                text-decoration: none !important;
+                            }
+                        }
+                        &.selected, :hover {
+                            background: #eee;
+                            font-weight: bold;
+                            a {
+                                color: #000 !important;
+                                text-decoration: none !important;
+                            }
+                        }
                     }
                 }
                 .Description {
-                    margin-top: 5px;
+                    margin-top: 10px;
                     padding-bottom: 50px;
                 }
             }
@@ -140,36 +154,6 @@
                 .ContactListItem {
                     display: inline-block;
                     margin-right: 20px;
-                    .ContactIcon {
-                        background-size: 100% 100%;
-                        width: 25px;
-                        height: 25px;
-                        border-radius: 10px;
-                        opacity: 0.5;
-                        transition: all 0.125s ease-in-out;
-                        display: inline-block;
-                        vertical-align: top;
-                        &:hover {
-                            opacity: 1;
-                            scale: 1.25;
-                            transform: rotate(180deg);
-                        }
-                        &.Youtube {
-                            width: 30px;
-                            margin-top: -1px;
-                            height: 30px;
-                            background-image: url(../assets/youtube-icon.png);
-                        }
-                        &.Linkedin {
-                            background-image: url(../assets/linkedin-icon.png);
-                        }
-                        &.Github {
-                            background-image: url(../assets/github-icon.png);
-                        }
-                        &.Artstation {
-                            background-image: url(../assets/artstation-icon.png);
-                        }
-                    }
                 }
             }
         }
