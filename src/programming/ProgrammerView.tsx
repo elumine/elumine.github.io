@@ -8,6 +8,65 @@ import ContactListItem from "../ContactListItem.tsx";
 export default function ProgrammerView() {
   return (
     <div className="ProgrammerView">
+      <div className="Section Skills React">
+        <div className="SectionLabel">Framework</div>
+        <div className="Icon"></div>
+        <div className="Information">
+          <div className="Header text-gray-1">React</div>
+          <div className="Description text-gray-2">
+            Development of single page applications.
+          </div>
+        </div>
+        <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
+          <div className="GalleryImage Min ProjectReact1"></div>
+          <div className="Info">
+            <div className="GalleryHeader text-gray-2">Example application</div>
+            <ul className="TechList">
+              <li className="ListItem text-gray-2">React</li>
+              <li className="ListItem text-gray-2">Microservices and useState()</li>
+              <li className="ListItem text-gray-2">Material</li>
+            </ul>
+            <div>
+              <ContactListItem linkUrl="https://github.com/elumine/TestFrontReact">
+                <div className="ContactIcon Github"></div>
+              </ContactListItem>
+              <div className="DescriptionText text-gray-2">View on Github</div>
+            </div>
+          </div>
+        </Gallery>
+        <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
+          <div className="GalleryImage Min ProjectReact2"></div>
+          <div className="Info">
+            <div className="GalleryHeader text-gray-2">MobX Example application</div>
+            <ul className="TechList">
+              <li className="ListItem text-gray-2">React</li>
+              <li className="ListItem text-gray-2">MobX state management</li>
+            </ul>
+            <div>
+              <ContactListItem linkUrl="https://github.com/elumine/TestFrontReactMobx">
+                <div className="ContactIcon Github"></div>
+              </ContactListItem>
+              <div className="DescriptionText text-gray-2">View on Github</div>
+            </div>
+          </div>
+        </Gallery>
+        {/* <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
+          <div className="GalleryImage Min ProjectReact3"></div>
+          <div className="Info">
+            <div className="GalleryHeader text-gray-2">Redux Example application</div>
+            <ul className="TechList">
+              <li className="ListItem text-gray-2">React</li>
+              <li className="ListItem text-gray-2">Redux state management</li>
+            </ul>
+            <div>
+              <ContactListItem linkUrl="https://github.com/elumine/TestFrontReactNextRedux">
+                <div className="ContactIcon Github"></div>
+              </ContactListItem>
+              <div className="DescriptionText text-gray-2">View on Github</div>
+            </div>
+          </div>
+        </Gallery> */}
+      </div>
       <div className="Section Skills Angular">
         <div className="SectionLabel">Framework</div>
         <div className="Icon"></div>
@@ -81,65 +140,6 @@ export default function ProgrammerView() {
             </div>
           </div>
         </Gallery>
-      </div>
-      <div className="Section Skills React">
-        <div className="SectionLabel">Framework</div>
-        <div className="Icon"></div>
-        <div className="Information">
-          <div className="Header text-gray-1">React</div>
-          <div className="Description text-gray-2">
-            Development of single page applications.
-          </div>
-        </div>
-        <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
-          <div className="GalleryImage Min ProjectReact1"></div>
-          <div className="Info">
-            <div className="GalleryHeader text-gray-2">Example application</div>
-            <ul className="TechList">
-              <li className="ListItem text-gray-2">React</li>
-              <li className="ListItem text-gray-2">Microservices and useState()</li>
-              <li className="ListItem text-gray-2">Material</li>
-            </ul>
-            <div>
-              <ContactListItem linkUrl="https://github.com/elumine/TestFrontReact">
-                <div className="ContactIcon Github"></div>
-              </ContactListItem>
-              <div className="DescriptionText text-gray-2">View on Github</div>
-            </div>
-          </div>
-        </Gallery>
-        <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
-          <div className="GalleryImage Min ProjectReact2"></div>
-          <div className="Info">
-            <div className="GalleryHeader text-gray-2">MobX Example application</div>
-            <ul className="TechList">
-              <li className="ListItem text-gray-2">React</li>
-              <li className="ListItem text-gray-2">MobX state management</li>
-            </ul>
-            <div>
-              <ContactListItem linkUrl="https://github.com/elumine/TestFrontReactMobx">
-                <div className="ContactIcon Github"></div>
-              </ContactListItem>
-              <div className="DescriptionText text-gray-2">View on Github</div>
-            </div>
-          </div>
-        </Gallery>
-        {/* <Gallery columnsCount={2} columnWidth={50} rowsCount={1} rowHeight={100} pointsCount={0}>
-          <div className="GalleryImage Min ProjectReact3"></div>
-          <div className="Info">
-            <div className="GalleryHeader text-gray-2">Redux Example application</div>
-            <ul className="TechList">
-              <li className="ListItem text-gray-2">React</li>
-              <li className="ListItem text-gray-2">Redux state management</li>
-            </ul>
-            <div>
-              <ContactListItem linkUrl="https://github.com/elumine/TestFrontReactNextRedux">
-                <div className="ContactIcon Github"></div>
-              </ContactListItem>
-              <div className="DescriptionText text-gray-2">View on Github</div>
-            </div>
-          </div>
-        </Gallery> */}
       </div>
       <div className="Section Skills NodeJS">
         <div className="SectionLabel">NodeJS project</div>

@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="Section Contacts">
-        <div className="Background">
+        <div className={ 'Background ' + (programmer ? 'Programmer' : '') }>
           <div className="Blackdrop"></div>
         </div>
         <div className="Photo"></div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1006c579.css",
-    "main.js": "/static/js/main.d9532098.js",
+    "main.css": "/static/css/main.7c959ccf.css",
+    "main.js": "/static/js/main.692fa3b3.js",
     "static/media/seq4.gif": "/static/media/seq4.74bb6a8c55dc41c6f190.gif",
     "static/media/anim4.gif": "/static/media/anim4.548ae660938a39da0e93.gif",
     "static/media/game2.png": "/static/media/game2.34cc7eba5aaf8aeb65a8.png",
@@ -10,6 +10,7 @@
     "static/media/seq3.gif": "/static/media/seq3.3a80f1380c6cf71cb5d9.gif",
     "static/media/screen6.png": "/static/media/screen6.e232c108abc1df50e3dc.png",
     "static/media/screen4.png": "/static/media/screen4.db3cb3227a39e15d48b2.png",
+    "static/media/job_mobidev_gallery_4.png": "/static/media/job_mobidev_gallery_4.e1aecb996284e10b4b40.png",
     "static/media/screen5.png": "/static/media/screen5.cf896b37c698089c13dd.png",
     "static/media/debug1.png": "/static/media/debug1.7bece16c0b812caf0a81.png",
     "static/media/screen3.png": "/static/media/screen3.41291ac0ee87481e27ce.png",
@@ -18,7 +19,6 @@
     "static/media/screen1.png": "/static/media/screen1.406989c0003c7bf2c379.png",
     "static/media/screen7.png": "/static/media/screen7.3fb6e4edba8c53cb29ee.png",
     "static/media/Screen9.png": "/static/media/Screen9.317af98f25235621ac8d.png",
-    "static/media/job_mobidev_gallery_4.png": "/static/media/job_mobidev_gallery_4.1631cdc0b85f8ea33d2d.png",
     "static/media/screen2.png": "/static/media/screen2.b1fc12feb40031c72a93.png",
     "static/media/job_mobidev_gallery_1.png": "/static/media/job_mobidev_gallery_1.7144fc982c430ea2fd2c.png",
     "static/media/screen8.png": "/static/media/screen8.03434b35f542702d985f.png",
@@ -68,6 +68,7 @@
     "static/media/css_logo.png": "/static/media/css_logo.c670aafd06379ee0f701.png",
     "static/media/debug2.png": "/static/media/debug2.b7ae3f1cdcd0cf4b0c6a.png",
     "static/media/levelbp1.png": "/static/media/levelbp1.299c4f9eee1da3f5d57e.png",
+    "static/media/header-bg2.jpg": "/static/media/header-bg2.04546a26083dd8b5931e.jpg",
     "static/media/anim6.png": "/static/media/anim6.fec17bd441ebf3986284.png",
     "static/media/react_logo.png": "/static/media/react_logo.f830ecc0b07ce78be507.png",
     "static/media/ui2.png": "/static/media/ui2.ec43e9941f696df0fb72.png",
@@ -85,11 +86,11 @@
     "static/media/artstation-icon.png": "/static/media/artstation-icon.2262b95f407afee890da.png",
     "static/media/angular1.png": "/static/media/angular1.abc67e4ef60220ca4b73.png",
     "index.html": "/index.html",
-    "main.1006c579.css.map": "/static/css/main.1006c579.css.map",
-    "main.d9532098.js.map": "/static/js/main.d9532098.js.map"
+    "main.7c959ccf.css.map": "/static/css/main.7c959ccf.css.map",
+    "main.692fa3b3.js.map": "/static/js/main.692fa3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.1006c579.css",
-    "static/js/main.d9532098.js"
+    "static/css/main.7c959ccf.css",
+    "static/js/main.692fa3b3.js"
   ]
 }
